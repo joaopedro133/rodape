@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width : 1280px) {
+    .wrapper {
+        height: 50%;
+        width: 70%;
+    }
+
+    .info {
+        width: 80%;
+    }
+
+    .footer{
+        bottom: -10%;
+    }
+}
+
+@media only screen and (max-width : 1280px) {
+    .wrapper {
+        width: 62em;
+        height: 22em;
+    }
+
+    .info {
+        width: 50em;
+    }
+
+    .footer {
+        bottom: -50px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #647494;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #314373;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.info .about h2,
+.info .language h2,
+.info .get-in-touch h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 0.9em;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+}
+
+.language p:nth-child(2){
+    border: 1px solid #5CC4DC;
+    background: #5CC4DC;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.language div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.get-in-touch div {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.get-in-touch img:first-child {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.get-in-touch img:first-child,
+.get-in-touch img:nth-child(3) {
+    filter: brightness(0) invert(1);
+}
+
+.get-in-touch img:nth-child(2) {
+    width: 50px;
+}
+
+.get-in-touch img:nth-child(3) {
+    width: 50px;
+}
+
+.footer {
+    display: flex;
+    position: relative;
+    width: 25em;
+    justify-content: space-between;
+    color: #CBD2DC;
+}
